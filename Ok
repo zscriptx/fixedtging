@@ -9708,7 +9708,7 @@ function u105(p194)
 
     local EntityListValue = Options2.EntityList.Value
 
-    if EntityListValue and #EntityListValue > 0 and not EntityListValue[v932.Alias] then
+    if EntityListValue and next(EntityListValue) ~= nil and not EntityListValue[v932.Alias] then
         return
     end
 
